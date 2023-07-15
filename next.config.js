@@ -22,7 +22,7 @@ module.exports = {
     mongodb_username: 'USERNAME',
     mongodb_password: 'PASSWORD',
     mongodb_db: 'DB',
-    NEXTAUTH_URL: 'https://r4ven.fr',
+    NEXTAUTH_URL: 'https://p2-gbednarski.vercel.app/',
     NEXTAUTH_SECRET: 'Ey7nTKnggBc0bRN8WUjyShw2qzOZ6KW4fUyqcKBePxY=',
   },
 };
