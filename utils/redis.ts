@@ -1,11 +1,8 @@
-import { Redis } from "@upstash/redis";
+import { Redis } from '@upstash/redis'
 
-const redis =
-  !!process.env.UPSTASH_REDIS_REST_URL && !!process.env.UPSTASH_REDIS_REST_TOKEN
-    ? new Redis({
-        url: process.env.UPSTASH_REDIS_REST_URL,
-        token: process.env.UPSTASH_REDIS_REST_TOKEN,
-      })
-    : undefined;
-
-export default redis;
+const redis = new Redis({
+  url: 'https://proper-aardvark-43675.upstash.io',
+  token: 'AaqbASQgNDhiNjIxZWUtZjEzOS00NWVlLTg3ZjUtMjAxOTEzMmQ2MmJhYTA0ZjJlM2I0NDhkNGIwYjkwZmUwOTlhZWMzN2JkNTY=',
+})
+   
+const data = await redis.set('foo', 'bar');
