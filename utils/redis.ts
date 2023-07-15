@@ -1,8 +1,11 @@
-import { Redis } from '@upstash/redis'
+import { createClient } from "redis"
+              
+const client = createClient ({
+  url : "rediss://default:a04f2e3b448d4b0b90fe099aec37bd56@proper-aardvark-43675.upstash.io:43675"
+});
 
-const redis = new Redis({
-  url: 'https://proper-aardvark-43675.upstash.io',
-  token: 'AaqbASQgNDhiNjIxZWUtZjEzOS00NWVlLTg3ZjUtMjAxOTEzMmQ2MmJhYTA0ZjJlM2I0NDhkNGIwYjkwZmUwOTlhZWMzN2JkNTY=',
-})
-   
-const data = await redis.set('foo', 'bar');
+client.on("error", function(err) {
+  throw err;
+});
+await client.connect()
+await client.set('foo','bar');
