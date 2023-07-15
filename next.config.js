@@ -8,14 +8,21 @@ module.exports = {
     return [
       {
         source: "/github",
-        destination: "https://github.com/Nutlope/restorePhotos",
+        destination: "https://github.com/gbednarski/p2",
         permanent: false,
       },
       {
         source: "/deploy",
-        destination: "https://vercel.com/templates/next.js/ai-photo-restorer",
+        destination: "https://p2-gbednarski.vercel.app/",
         permanent: false,
       },
     ];
+  },
+  env: {
+    mongodb_username: 'USERNAME',
+    mongodb_password: 'PASSWORD',
+    mongodb_db: 'DB',
+    NEXTAUTH_URL: 'https://r4ven.fr',
+    NEXTAUTH_SECRET: 'Ey7nTKnggBc0bRN8WUjyShw2qzOZ6KW4fUyqcKBePxY=',
   },
 };
