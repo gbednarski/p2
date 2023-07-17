@@ -17,7 +17,7 @@ import { useSession, signIn } from "next-auth/react";
 import useSWR from "swr";
 import { Rings } from "react-loader-spinner";
 
-// Configuration for the uploader
+// Konfiguracja dla uploadera
 const uploader = Uploader({
   apiKey: !!process.env.NEXT_PUBLIC_UPLOAD_API_KEY
     ? process.env.NEXT_PUBLIC_UPLOAD_API_KEY
@@ -46,15 +46,15 @@ const Home: NextPage = () => {
       let isSafe = false;
       try {
         isSafe = await NSFWPredictor.isSafeImg(file);
-        if (!isSafe) va.track("NSFW Image blocked");
+        if (!isSafe) va.track("Zablokowano obraz NSFW");
       } catch (error) {
-        console.error("NSFW predictor threw an error", error);
+        console.error("Predyktor NSFW zgłosił błąd", error);
       }
       if (!isSafe) {
-        return "Detected a NSFW image which is not allowed.";
+        return "Wykryto obraz NSFW, który jest niedozwolony.";
       }
       if (data.remainingGenerations === 0) {
-        return "No more generations left for the day.";
+        return "Brak pozostałych generacji na dzisiaj.";
       }
       return undefined;
     },
@@ -101,7 +101,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Restore Photos</title>
+        <title>Odtwórz zdjęcia</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -113,22 +113,21 @@ const Home: NextPage = () => {
           rel="noreferrer"
           className="border rounded-2xl py-1 px-4 text-slate-500 text-sm mb-5 hover:text-slate-600 transition duration-300 ease-in-out"
         >
-          <span className="font-semibold">647,143 images</span> restored and
-          counting
+          <span className="font-semibold">647,143 zdjęcia</span> odtworzone i liczone
         </a>
         <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl mb-5">
-          Restore any face photo
+          Odtwórz dowolne zdjęcie twarzy
         </h1>
         {status === "authenticated" && data && (
           <p className="text-slate-500">
-            You have{" "}
+            Masz{" "}
             <span className="font-semibold">
-              {data.remainingGenerations} generations
+              {data.remainingGenerations} generacji
             </span>{" "}
-            left today. Your generation
-            {Number(data.remainingGenerations) > 1 ? "s" : ""} will renew in{" "}
+            pozostałe na dzisiaj. Twoje generacje
+            {Number(data.remainingGenerations) > 1 ? "są" : ""} odnowią się za{" "}
             <span className="font-semibold">
-              {data.hours} hours and {data.minutes} minutes.
+              {data.hours} godzin i {data.minutes} minut.
             </span>
           </p>
         )}
@@ -163,9 +162,7 @@ const Home: NextPage = () => {
             !originalPhoto && (
               <div className="h-[250px] flex flex-col items-center space-y-6 max-w-[670px] -mt-8">
                 <div className="max-w-xl text-gray-600">
-                  Sign in below with Google to create a free account and restore
-                  your photos today. You will be able to restore 5 photos per
-                  day for free.
+                  Zaloguj się poniżej za pomocą konta Google, aby założyć darmowe konto i odtworzyć swoje zdjęcia już dziś. Będziesz mógł bezpłatnie odtworzyć 5 zdjęć dziennie.
                 </div>
                 <button
                   onClick={() => signIn("google")}
@@ -175,16 +172,16 @@ const Home: NextPage = () => {
                     src="/google.png"
                     width={20}
                     height={20}
-                    alt="google's logo"
+                    alt="logo Google"
                   />
-                  <span>Sign in with Google</span>
+                  <span>Zaloguj się za pomocą konta Google</span>
                 </button>
               </div>
             )
           )}
           {originalPhoto && !restoredImage && (
             <Image
-              alt="original photo"
+              alt="oryginalne zdjęcie"
               src={originalPhoto}
               className="rounded-2xl"
               width={475}
@@ -194,9 +191,9 @@ const Home: NextPage = () => {
           {restoredImage && originalPhoto && !sideBySide && (
             <div className="flex sm:space-x-4 sm:flex-row flex-col">
               <div>
-                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                <h2 className="mb-1 font-medium text-lg">Oryginalne zdjęcie</h2>
                 <Image
-                  alt="original photo"
+                  alt="oryginalne zdjęcie"
                   src={originalPhoto}
                   className="rounded-2xl relative"
                   width={475}
@@ -204,10 +201,10 @@ const Home: NextPage = () => {
                 />
               </div>
               <div className="sm:mt-0 mt-8">
-                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+                <h2 className="mb-1 font-medium text-lg">Odtworzone zdjęcie</h2>
                 <a href={restoredImage} target="_blank" rel="noreferrer">
                   <Image
-                    alt="restored photo"
+                    alt="odtworzone zdjęcie"
                     src={restoredImage}
                     className="rounded-2xl relative sm:mt-0 mt-2 cursor-zoom-in"
                     width={475}
@@ -234,7 +231,7 @@ const Home: NextPage = () => {
               role="alert"
             >
               <div className="bg-red-500 text-white font-bold rounded-t px-4 py-2">
-                Please try again in 24 hours
+                Spróbuj ponownie za 24 godziny
               </div>
               <div className="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
                 {error}
@@ -252,7 +249,7 @@ const Home: NextPage = () => {
                 }}
                 className="bg-black rounded-full text-white font-medium px-4 py-2 mt-8 hover:bg-black/80 transition"
               >
-                Upload New Photo
+                Prześlij nowe zdjęcie
               </button>
             )}
             {restoredLoaded && (
@@ -262,7 +259,7 @@ const Home: NextPage = () => {
                 }}
                 className="bg-white rounded-full text-black border font-medium px-4 py-2 mt-8 hover:bg-gray-100 transition"
               >
-                Download Restored Photo
+                Pobierz odtworzone zdjęcie
               </button>
             )}
           </div>
