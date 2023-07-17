@@ -6,26 +6,26 @@ export default function Footer() {
       <div>
         Powered by{" "}
         <a
-          href="https://replicate.com/"
+          href="https://bednarski.ch/"
           target="_blank"
           className="font-bold transition hover:text-black/50"
         >
-          Replicate,{" "}
+          Bednarski,{" "}
         </a>
         <a
-          href="https://upload.io"
+          href="https://ss"
           target="_blank"
           className="font-bold transition hover:text-black/50"
         >
-          Upload,{" "}
+          weekend,{" "}
         </a>
         i{" "}
         <a
-          href="https://vercel.com/"
+          href="https://work/"
           target="_blank"
           className="font-bold transition hover:text-black/50"
         >
-          Vercel.
+          work.
         </a>
       </div>
       <div className="flex space-x-4 pb-4 sm:pb-0">
