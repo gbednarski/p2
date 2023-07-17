@@ -19,7 +19,7 @@ export default function Footer() {
         >
           Upload,{" "}
         </a>
-        and{" "}
+        i{" "}
         <a
           href="https://vercel.com/"
           target="_blank"
@@ -30,7 +30,7 @@ export default function Footer() {
       </div>
       <div className="flex space-x-4 pb-4 sm:pb-0">
         <Link
-          href="https://twitter.com/nutlope"
+          href="https://twitter.com/s"
           className="group"
           aria-label="TaxPal on Twitter"
         >
@@ -42,7 +42,7 @@ export default function Footer() {
           </svg>
         </Link>
         <Link
-          href="https://github.com/Nutlope/restorePhotos"
+          href="https://github.com/s/s"
           className="group"
           aria-label="TaxPal on GitHub"
         >
