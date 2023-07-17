@@ -8,19 +8,19 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
-            content="Restore your old face photos and keep the memories alive."
+            content="Odtwórz swoje stare zdjęcia twarzy i zachowaj wspomnienia."
           />
           <meta property="og:site_name" content="restorePhotos.io" />
           <meta
             property="og:description"
-            content="Restore your old face photos and keep the memories alive."
+            content="Odtwórz swoje stare zdjęcia twarzy i zachowaj wspomnienia."
           />
-          <meta property="og:title" content="Face Photo Restorer" />
+          <meta property="og:title" content="Odtwórz zdjęcia twarzy" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Face Photo Restorer" />
+          <meta name="twitter:title" content="Odtwórz zdjęcia twarzy" />
           <meta
             name="twitter:description"
-            content="Restore your old photos and keep the memories alive."
+            content="Odtwórz swoje stare zdjęcia i zachowaj wspomnienia."
           />
           <meta
             property="og:image"
