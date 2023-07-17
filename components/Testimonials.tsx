@@ -4,21 +4,21 @@ const testimonials = [
   [
     {
       content:
-        "Just had early access to this and it's *ridic*. Powered by @vercel x @replicatehq – also very fast.",
+        "Właśnie miałem wczesny dostęp do tego i jest niesamowite. Napędzane przez @vercel x @replicatehq – również bardzo szybkie.",
       link: "https://twitter.com/rauchg/status/1612233034622984192",
       author: {
         name: "Guillermo Rauch",
-        role: "CEO at Vercel",
+        role: "CEO w DENTKing",
         image: "/g.jpg",
       },
     },
     {
       content:
-        "This is amazing! And in the 🧵 you can see the whole open-source stack instantly deployable to Vercel",
+        "To jest niesamowite! A w tym wątku możesz zobaczyć cały zestaw open-source, który można natychmiast wdrożyć na Vercel",
       link: "https://twitter.com/cramforce/status/1612496954218672128",
       author: {
         name: "Malte Ubl",
-        role: "CTO at Vercel",
+        role: "CTO w Przychodni",
         image: "/malte.jpg",
       },
     },
@@ -26,21 +26,21 @@ const testimonials = [
   [
     {
       content:
-        "I just used it and am extremely impressed with the website and wanted to express my appreciation for the excellent design and functionality. Keep up the great work!",
+        "Właśnie go użyłem i jestem ogromnie pod wrażeniem strony internetowej oraz chciałem wyrazić swoje uznanie dla doskonałego projektu i funkcjonalności. Dobra robota!",
       link: "https://twitter.com/phar_whaz/status/1612498030627852309",
       author: {
         name: "Fawaz Adeniji",
-        role: "Software Engineer",
+        role: "Dentysta",
         image: "/fawaz.jpg",
       },
     },
     {
       content:
-        "Turning blurred photos into perfectly sharp ones. Works like magic",
+        "Zamienia rozmazane zdjęcia w perfekcyjnie ostre. Działa jak magia",
       link: "https://twitter.com/sergvind/status/1612610058369515521",
       author: {
         name: "Sergei Vinderskikh",
-        role: "CPO at Treeum",
+        role: "Specjalista ortodoncji",
         image: "/sergei.jpg",
       },
     },
@@ -48,21 +48,21 @@ const testimonials = [
   [
     {
       content:
-        "I've just used it and damn I'll keep coming back! This is so good. Great work!",
+        "Właśnie go użyłem i cholera, będę wracać! To jest naprawdę dobre. Świetna robota!",
       link: "https://twitter.com/Himanil_Gole/status/1612510385504157697",
       author: {
         name: "Himanil Gole",
-        role: "Designer & Founder at CBREX",
+        role: "Projektant stomatologiczny i założyciel",
         image: "/himanil.jpg",
       },
     },
     {
       content:
-        "Wow, thank you! Tried a few and love it! My small example (pic of father from 70s original on right), really cleaned it up!",
+        "Wow, dziękuję! Wypróbowałem kilka i uwielbiam to! Moje małe przykłady (zdjęcie mojego ojca z lat 70. po prawej stronie), naprawdę to uporządkowało!",
       link: "https://twitter.com/rod_ellison/status/1612513333302775809",
       author: {
         name: "Rod Ellison",
-        role: "Software Engineer",
+        role: "Dentysta",
         image: "/rod.jpg",
       },
     },
@@ -73,16 +73,16 @@ export function Testimonials() {
   return (
     <section
       id="testimonials"
-      aria-label="What our customers are saying"
+      aria-label="Co mówią nasi klienci"
       className="py-10"
     >
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto md:text-center">
           <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl">
-            Loved by many worldwide.
+            Kochany przez wielu na całym świecie.
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-slate-700 leading-7">
-            See what our 300,000+ users are saying about the product.
+            Zobacz, co mówi ponad 300 000 użytkowników o produkcie.
           </p>
         </div>
         <ul
@@ -117,7 +117,7 @@ export function Testimonials() {
                             <Image
                               className="h-14 w-14 object-cover"
                               src={testimonial.author.image}
-                              alt="picture of the testimonial author"
+                              alt="zdjęcie autora opinii"
                               width={56}
                               height={56}
                             />
