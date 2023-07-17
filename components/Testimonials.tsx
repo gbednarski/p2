@@ -4,20 +4,20 @@ const testimonials = [
   [
     {
       content:
-        "Właśnie miałem wczesny dostęp do tego i jest niesamowite. Napędzane przez @vercel x @replicatehq – również bardzo szybkie.",
+        "Niesamowite doświadczenie! Bardzo szybka aplikacja!",
       link: "https://twitter.com/rauchg/status/1612233034622984192",
       author: {
-        name: "Guillermo Rauch",
+        name: "Gerhard Maier",
         role: "CEO w DENTKing",
         image: "/g.jpg",
       },
     },
     {
       content:
-        "To jest niesamowite! A w tym wątku możesz zobaczyć cały zestaw open-source, który można natychmiast wdrożyć na Vercel",
+        "Wspaniałe narzędzie! Polecam serdecznie wszystkim.",
       link: "https://twitter.com/cramforce/status/1612496954218672128",
       author: {
-        name: "Malte Ubl",
+        name: "Marek Nowak",
         role: "CTO w Przychodni",
         image: "/malte.jpg",
       },
@@ -26,20 +26,20 @@ const testimonials = [
   [
     {
       content:
-        "Właśnie go użyłem i jestem ogromnie pod wrażeniem strony internetowej oraz chciałem wyrazić swoje uznanie dla doskonałego projektu i funkcjonalności. Dobra robota!",
+        "Jestem pod wrażeniem strony internetowej! Doskonały projekt i funkcjonalność. Świetna robota!",
       link: "https://twitter.com/phar_whaz/status/1612498030627852309",
       author: {
-        name: "Fawaz Adeniji",
+        name: "Katarzyna Wiśniewska",
         role: "Dentysta",
         image: "/fawaz.jpg",
       },
     },
     {
       content:
-        "Zamienia rozmazane zdjęcia w perfekcyjnie ostre. Działa jak magia",
+        "Przekształca rozmazane zdjęcia w perfekcyjnie ostre. Cudowne!",
       link: "https://twitter.com/sergvind/status/1612610058369515521",
       author: {
-        name: "Sergei Vinderskikh",
+        name: "Jan Kowalski",
         role: "Specjalista ortodoncji",
         image: "/sergei.jpg",
       },
@@ -48,20 +48,20 @@ const testimonials = [
   [
     {
       content:
-        "Właśnie go użyłem i cholera, będę wracać! To jest naprawdę dobre. Świetna robota!",
+        "Niesamowite! Będę wracać! Świetna robota!",
       link: "https://twitter.com/Himanil_Gole/status/1612510385504157697",
       author: {
-        name: "Himanil Gole",
+        name: "Monika Jankowska",
         role: "Projektant stomatologiczny i założyciel",
         image: "/himanil.jpg",
       },
     },
     {
       content:
-        "Wow, dziękuję! Wypróbowałem kilka i uwielbiam to! Moje małe przykłady (zdjęcie mojego ojca z lat 70. po prawej stronie), naprawdę to uporządkowało!",
+        "Dziękuję! Uwielbiam to! Naprawdę poprawiło jakość mojego zdjęcia!",
       link: "https://twitter.com/rod_ellison/status/1612513333302775809",
       author: {
-        name: "Rod Ellison",
+        name: "Adam Nowicki",
         role: "Dentysta",
         image: "/rod.jpg",
       },
