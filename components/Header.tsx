@@ -26,7 +26,7 @@ export default function Header({ photo }: { photo?: string | undefined }) {
         />
       ) : (
         <a
-          href="https://vercel.com/templates/next.js/ai-photo-restorer"
+          href="https://bednarski.ch"
           target="_blank"
           rel="noreferrer"
         >
